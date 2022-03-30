@@ -105,10 +105,137 @@
     <div class="progressbar-top"></div>
 
     
+        <div class="aplayer"></div>
         <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/first19326/cdn@master/static/css/APlayer.css">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/first19326/cdn@master/static/js/APlayer.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/first19326/cdn@master/static/js/Meting.min.js"></script>
-        <meting-js id="3778678" lrcshow="false" server="netease" type="playlist" fixed="true" autoplay="false" loop="all" order="random" preload="auto" volume="0.67" mutex="true"></meting-js>
+        <script type="text/javascript">
+            const aplayer = new APlayer({
+                container: document.querySelector(".aplayer"),
+                fixed: true,
+                autoplay: false,
+                loop: "all",
+                order: "random",
+                preload: "auto",
+                volume: 0.67,
+                mutex: true,
+                lrcType: 3,
+                audio: [
+                    
+                        {
+                            name: "See You Again",
+                            artist: "Charlie Puth, Wiz Khalifa",
+                            cover: "/zcqblog/music/cover/See You Again.jpg",
+                            url: "/zcqblog/music/song/See You Again.mp3",
+                            lrc: "/zcqblog/music/lrc/See You Again.lrc"
+                        },
+                    
+                        {
+                            name: "LOSER",
+                            artist: "BIGBANG",
+                            cover: "",
+                            url: "/zcqblog/music/song/BIGBANG (빅뱅) - LOSER (失败者).flac",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "十二月的奇迹 (Miracles in December)",
+                            artist: "EXO",
+                            cover: "",
+                            url: "/zcqblog/music/song/EXO (엑소) - 十二月的奇迹 (Miracles in December).flac",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "与火星的孩子对话",
+                            artist: "华晨宇",
+                            cover: "",
+                            url: "/zcqblog/music/song/与火星的孩子对话.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "仓颉",
+                            artist: "五月天",
+                            cover: "",
+                            url: "/zcqblog/music/song/五月天 - 仓颉.flac",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "转眼",
+                            artist: "五月天",
+                            cover: "",
+                            url: "/zcqblog/music/song/五月天 - 转眼hires.flac",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "七重人格",
+                            artist: "华晨宇",
+                            cover: "",
+                            url: "/zcqblog/music/song/华晨宇 - 七重人格.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "好想爱这个世界啊",
+                            artist: "华晨宇",
+                            cover: "",
+                            url: "/zcqblog/music/song/华晨宇 - 好想爱这个世界啊.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "国王与乞丐",
+                            artist: "华晨宇",
+                            cover: "",
+                            url: "/zcqblog/music/song/国王与乞丐.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "愿你有故乡",
+                            artist: "房东的猫",
+                            cover: "",
+                            url: "/zcqblog/music/song/愿你有故乡.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "疯人院",
+                            artist: "华晨宇",
+                            cover: "",
+                            url: "/zcqblog/music/song/疯人院.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "遥远的歌",
+                            artist: "刘惜君",
+                            cover: "",
+                            url: "/zcqblog/music/song/遥远的歌.mp3",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "K歌之王 (粤语)",
+                            artist: "陈奕迅",
+                            cover: "",
+                            url: "/zcqblog/music/song/陈奕迅 - K歌之王 (粤语).flac",
+                            lrc: ""
+                        },
+                    
+                        {
+                            name: "에잇(Prod.&amp;Feat. SUGA of BTS)",
+                            artist: "IU",
+                            cover: "",
+                            url: "/zcqblog/music/song/에잇(Prod.&amp;Feat. SUGA of BTS).mp3",
+                            lrc: ""
+                        },
+                    
+                ]
+            });
+        </script>
     
     
     <div class="wrap-right"></div>
@@ -443,7 +570,7 @@
         },
 
         Music : {
-            type : 'Meting'
+            type : 'APlayer'
         },
         APlayer : {
             container : '.aplayer',
